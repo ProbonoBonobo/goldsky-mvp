@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "parasol-worker"
+version = "2.0.0"
+description = ""
+authors = ["Kevin Zeidler <kzeidler@8thlight.com>"]
+readme = "README.md"
+packages = [{include = "parasol_worker"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "parasol-api"
+version = "2.0.0"
+description = ""
+authors = ["Kevin Zeidler <kzeidler@8thlight.com>"]
+readme = "README.md"
+packages = [{include = "parasol_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+SQLAlchemy = "^2.0.22"
+psycopg2-binary = "^2.9.9"
+fastapi = {extras = ["all"], version = "^0.104.0"}
+pydantic-settings = "^2.0.3"
+uvicorn = "^0.23.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
